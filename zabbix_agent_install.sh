@@ -7,7 +7,6 @@ if [ "$UID" -ne 0 ]; then
 fi
 
 if [ -x /usr/bin/yum ]; then
-  yum -y update
   rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/6/x86_64/zabbix-release-3.0-1.el6.noarch.rpm
   yum -y install zabbix-agent
 
